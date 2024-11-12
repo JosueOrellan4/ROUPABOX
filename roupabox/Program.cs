@@ -10,6 +10,14 @@ namespace roupabox
     {
         static void Main(string[] args)
         {
+
+
+            Cabecalho variavelcabecalho = new Cabecalho();
+            variavelcabecalho.ExibirCabecalho();
+
+
+
+            // Chama o método ExibirCabecalho da classe Cabecalho
         }
     }
 }
