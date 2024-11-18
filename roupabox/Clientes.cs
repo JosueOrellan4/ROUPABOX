@@ -96,7 +96,7 @@ namespace Roupabox
 
             Console.WriteLine("Cliente cadastrado com sucesso!!!!");
             Console.WriteLine("Digite uma tecla para voltar ao menu principal");
-            Console.ReadKey();
+            Console.ReadKey(); //
 
 
         }
