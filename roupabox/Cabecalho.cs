@@ -29,7 +29,7 @@ namespace roupabox
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("════════════════════════════════════");
             Console.ResetColor();
-            Thread.Sleep(4000);
+            Thread.Sleep(1000);
             Console.Clear();
             
         }

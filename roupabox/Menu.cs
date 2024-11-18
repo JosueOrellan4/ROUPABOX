@@ -30,7 +30,8 @@ namespace roupabox
                     
                     break;
                 case 3:
-                   
+                    Produto variavelProduto = new Produto();
+                    variavelProduto.cadProduto();
                     break;
                 case 4:
                   

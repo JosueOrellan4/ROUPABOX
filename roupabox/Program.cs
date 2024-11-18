@@ -12,12 +12,15 @@ namespace roupabox
         {
 
 
-            Cabecalho variavelcabecalho = new Cabecalho();
-            variavelcabecalho.ExibirCabecalho();
+            Cabecalho cabecalho = new Cabecalho();
+            Cabecalho.ExibirCabecalho();
+
+            Menu menu = new Menu();
+            Menu.ExibirMenu();
 
 
 
-            // Chama o método ExibirCabecalho da classe Cabecalho
+            
         }
     }
 }
