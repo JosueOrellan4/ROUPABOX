@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Roupabox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,15 +13,18 @@ namespace roupabox
         {
 
 
-            Cabecalho cabecalho = new Cabecalho();
-            Cabecalho.ExibirCabecalho();
+            Cabec variavelCabecalho = new Cabec();
+            variavelCabecalho.Cabecalho();
 
-            Menu menu = new Menu();
-            Menu.ExibirMenu();
+            Produtos varPro = new Produtos();
+            Clientes varCli = new Clientes();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.Menu(varPro, varCli);
 
 
 
-            
+
         }
     }
 }

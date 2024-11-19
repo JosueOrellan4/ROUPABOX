@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace roupabox
 {
-    public class Cabecalho
+    public class Cabec
     {
-        public static void ExibirCabecalho()
+        public void Cabecalho()
         { 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("════════════════════════════════════");
