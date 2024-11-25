@@ -50,15 +50,17 @@ namespace Roupabox
             Console.WriteLine("\nDigite o CPF do Cliente:");
             string cpfCli = Console.ReadLine();
 
+            Cliente.cpfCli = cpfCli;
+
             while (cpfCli.Length != 11 || !cpfCli.All(char.IsDigit))
             {
                 Console.WriteLine("Erro: O CPF deve conter exatamente 11 digitos.");
                 Console.WriteLine("\nDigite o CPF novamente:");
-                cpfCli = Console.ReadLine();
+                 cpfCli = Console.ReadLine(); 
             }
 
 
-             Console.WriteLine("\nDigite o Telefone do Cliente:");
+            Console.WriteLine("\nDigite o Telefone do Cliente:");
              int telCli = int.Parse(Console.ReadLine());
 
              Console.WriteLine("\nDigite a idade do Cliente:");
@@ -105,7 +107,7 @@ namespace Roupabox
 
             foreach (var cliente in listaClientes)
             {
-                Console.WriteLine($"Nome: {cliente.nomeCli}, " + $"CPF: {cliente.cpfCli} " );
+                Console.WriteLine($"Nome: {cliente.nomeCli}, " + $"Cpf: {cliente.cpfCli} ");
             }
 
             Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
@@ -116,11 +118,29 @@ namespace Roupabox
             variavelCabecalho.Cabecalho();
 
             Clientes varCli  = new Clientes();
-
             ExibirMenu variavelMenu = new ExibirMenu();
 
             return Cliente;
 
+        }
+        public void listarClientes()
+        {
+            Console.Clear ();
+            Console.WriteLine("Lista de Clientes Cadastrados");
+
+            foreach (var cliente in listaClientes)
+            {
+                Console.WriteLine($"Nome: {cliente.nomeCli}," + $" CPF:{cliente.cpfCli}" + $", Telefone: {cliente.telCli} ");
+            }
+            Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+            Console.ReadKey();
+            Console.Clear();
+
+            Cabec variavelCabecalho = new Cabec ();
+            variavelCabecalho .Cabecalho();
+
+            Clientes varCli = new Clientes();
+            ExibirMenu variavelmenu = new ExibirMenu();
         }
     }
 }

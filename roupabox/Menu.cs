@@ -31,6 +31,7 @@ namespace roupabox
                         varCli.cadCliente();
                         break;
                     case 2:
+                        varCli.listarClientes();
 
                         break;
                     case 3:
@@ -39,6 +40,7 @@ namespace roupabox
                         break;
 
                     case 4:
+                        varPro.listarProdutos();
 
                         break;
                     case 0:

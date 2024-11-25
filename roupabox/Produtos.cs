@@ -71,5 +71,25 @@ namespace roupabox
 
 
         }
+        public void listarProdutos()
+        {
+            Console.Clear();
+            Console.WriteLine("Lista de Produtos Cadastrados");
+
+            foreach(var produto in listaProdutos)
+            {
+                Console.WriteLine($"Descrição: {produto.descPro}," + $"Valor:{ produto.valPro} " + $"Peso: {produto.pesoPro} ");
+            }
+            Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
+            Console.ReadKey();
+            Console.Clear();
+
+            Cabec variavelCabecalho = new Cabec();
+            variavelCabecalho.Cabecalho();
+            Produtos varPro = new Produtos();
+            ExibirMenu variavelmenu = new ExibirMenu();
+
+
+        }
     }
 }
