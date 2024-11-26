@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API.cs" />
     <Compile Include="Cabecalho.cs" />
     <Compile Include="ClienteCad.cs" />
     <Compile Include="Clientes.cs" />
